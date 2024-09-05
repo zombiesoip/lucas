@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine</title>
+    <style>
+      /* Basic styling for the slot machine */
+      .slot-machine {
+        text-align: center;
+        margin: 50px auto;
+        width: 300px;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+      }
+
+      .reels {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+
+      .reel {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+      }
+
+      #spin-button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slot-machine">
+      <div class="reels">
+        <div id="reel1" class="reel">?</div>
+        <div id="reel2" class="reel">?</div>
+        <div id="reel3" class="reel">?</div>
+      </div>
+      <button id="spin-button">Tirar!</button>
+    </div>
+
+    <script src="slot.js"></script>
+  </body>
+</html>

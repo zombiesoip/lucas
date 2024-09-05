@@ -1,0 +1,28 @@
+//basic html with js include
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Numbers</title>
+    <script src="numbers.js"></script>
+  </head>
+  <body>
+    <h1>Numbers</h1>
+    perfectos :
+    <p id="output"></p>
+
+    <script>
+
+      let nPerfectos = [];
+      for (i = 1; i < 1000; i++)
+        if (numeroPerfecto(i)) {
+          nPerfectos.push(i);
+        }
+
+      ///console.log(divisores(28));
+
+      console.log("perfectos=" + nPerfectos.join(","));
+
+      document.getElementById("output").innerHTML = nPerfectos.join(",");
+    </script>
+  </body>
+</html>

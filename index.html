@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+     
+   <head>
+<style type="text/css">
+
+
+ /* -------------- LIGHT/DARK SWITCH ----------------------*/
+        label{
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            right: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+           
+        }
+        label:before{
+            position: absolute;
+            content: '';
+            width:20px;
+            height: 20px;
+            left: 1px;
+            top: 1px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.6s;
+          
+           
+        }
+        label.active:before{
+            left: 24px;
+            background: #fff;
+        }
+        
+
+ /* ---------------------------DARK MODE ⬇️ --------------------------------------*/
+
+        main.night {
+            background: linear-gradient(108deg, #282c58 0%, #080b23 100%); 
+            color: white;
+            
+
+        }
+        .div-buy.night {
+            border: rgb(19, 19, 19) solid 2px;
+            color: white;
+        }
+        .div-buy a.night {
+            color: white
+        }
+        .stream.night {
+            background-color: gray;
+        }
+        .div-buy:hover.night {
+            background-color: #101127;
+    
+        }
+        .home-header.night {
+            background: linear-gradient(108deg, #292e61 0%, #050716 100%); 
+            color: white;
+
+        }
+        header.night {
+            background-image: linear-gradient(#131010, #3b4085); 
+            color: white;
+
+        }
+        .tourr.night {
+          border: solid 1px rgb(22, 22, 22);
+        }
+        .tourr:hover.night {
+            background-color: #101127;
+        }
+        .stream:hover.night {
+            background-color: #2e305a;
+        }
+        .container.night {
+            background-color: #191a27;
+        }
+        #music.night, #tour.night, #merch.night {
+            background: linear-gradient(108deg, #222546 0%, #232753 100%)
+        }
+       
+     
+
+        @media screen and (min-width:900px) {
+          .respon{
+            display: flex;
+          }
+
+        }
+
+
+/* ---------------------------LIGHT MODE/ DARK MODE ⬆️--------------------------------------*/
+
+
+
+
+    #music, #tour, #merch {
+        background-image: linear-gradient(to bottom right, #dadada, #222222);
+       padding: 8px;
+       height:500px;
+       text-align: center;
+    }
+    header {
+        background-image: rgb(212, 212, 211);
+        transition: ease-in-out 1.4s;
+
+    }
+    main {
+      background-color:#c7c7c7;
+    
+      
+    }
+    footer {
+        background-color: rgb(0, 24, 243);
+    }
+    .section {
+        background-image: url(https://melissayhome.files.wordpress.com/2019/01/img_7800.jpg);
+        background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     height: 300px;
+     width: 1900px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:20px;
+        padding:10px;
+        background-color: #b6b6b6;
+        height: 50%;  
+        
+    }
+    .rep {
+        width: 10%;
+        height: 10%;
+    }
+    .image-class-section-div {
+        width: 30%;
+        padding-top: 40px;
+        border-radius: 3px;
+        opacity: 85%;    
+    }
+    body {
+        color: rgb(59, 54, 46);
+        height: 100%;
+        margin: 0px;
+        padding: 0%;
+       
+    }
+    #main-banner {
+      margin-left: 300px;
+      margin-bottom: 20px;
+     
+
+    }
+
+    .stream {
+        width: 80%;
+        border: rgb(41, 38, 33) solid 2px;
+       padding:15px;
+        margin-left: 196px;
+        transition: background-color ease-in-out 600ms;
+        transition: all 600ms ease-in-out;
+    
+    }
+
+
+
+    .stream:hover {
+    background-color:rgb(156, 156, 153);
+    font-weight: 840;
+    }
+
+    .grid-template {
+        display: grid; 
+        grid-template-columns:1fr 1fr;
+       
+       
+    }
+
+#outnow {
+    font-size: 50px;
+}
+
+
+
+    
+   .buttonbuy{
+text-align: center;
+margin-top: 333px;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    font-size: 27px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 100px;
+    font-family: "Reddit Mono", monospace;
+}
+.home-header {
+   background-color: rgb(160, 160, 159);
+   position: fixed;
+   color: black;
+   border-bottom: black solid 2px;
+  height: fit-content;
+  width: 100%;
+  
+  
+}
+
+.text-buy {
+    margin-left: 300px;
+}
+  
+.replogohome {
+width: 12%;
+padding-left: 20px;
+margin-top: 5px;
+}
+
+
+.music-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.image-music-vid {
+width: 80%;
+transition: width ease-in-out 0.35s;
+
+}
+.image-music-vid:hover {
+width: 82%;
+-webkit-filter: brightness(125%);
+border: black solid 2px;
+
+}
+.image-music-vid:hover {
+    display: block;
+}
+
+
+
+
+
+#hola {
+    margin-left: 100px;
+}
+#abcd {
+margin-left: 44px;
+}
+
+#badd {
+    margin-right: 150px;
+}
+
+
+.mvvv {
+    margin-left: 740px;
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+#reptour {
+    text-align: center;
+    font-size: 38px;
+    margin-top:  250px;
+
+}
+.tourr {
+    border: rgb(32, 23, 18) solid 1px;
+    width: 20%;
+    font-size: 28px;
+    margin-left: 730px;
+    height: 47px;
+    font-family: "Reddit Mono", monospace;
+    transition: background-color ease-in-out 600ms;
+    font-weight: normal;
+  transition: all 0.5s ease-in-out;
+   
+    
+}
+
+.tourr:hover {
+background-color: rgb(134, 134, 133);
+font-weight: bold;
+
+}
+
+
+    
+#international {
+    margin-top: 10px;
+}
+#tour-netflix {
+    margin-top: 10px;
+}
+#more-dates {
+    margin-top: 10px;
+}
+
+h2 {
+
+  font-family: "Lato", sans-serif;
+}
+
+a {
+    border-bottom: rgb(56, 9, 87);
+    
+}
+
+
+.store-cd-magazine {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+#h22 {
+margin-left: 600px;
+border: rgb(17, 17, 17) solid 1px;
+width: 30%;
+margin-top: 140px
+}
+
+#store-r {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 3px;
+   
+    
+    
+}
+.book{
+width: 40%;
+transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+border: black solid 1px;
+border-bottom: none;
+}
+
+.book:hover {
+    filter: brightness(140%); /* Standard filter property */
+    width: 41%;
+
+}
+
+#example {
+    visibility: hidden;
+    position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: 1px solid #ccc;
+}
+
+
+#store-r:hover #example {
+  visibility: visible;
+}
+
+#snd {
+    margin-left: 450px;
+
+}
+
+#thrd {
+ margin-right: 590px;
+ height: 100.3%;  
+}
+.div-buy {
+    font-size: 45px;
+    border: solid rgb(61, 61, 61) 2px;
+    width: 39.55%;
+    margin-bottom: 200px;
+    height: 22%;
+    text-align: center;
+    justify-content: center;
+    transition: background-color ease-in-out 600ms;
+    font-weight: normal;
+  transition: all 0.5s ease-in-out;
+  font-family: "Reddit Mono", monospace;
+}
+
+.div-buy:hover {
+    background-color: rgb(134, 134, 133);
+font-weight: bold;
+}
+
+#sec-image-divbuy {
+    margin-left: 450px;
+}
+.div-buy a {
+    color: rgb(59, 54, 46);
+    text-decoration: none;
+  
+}
+
+
+
+
+
+
+
+
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+   </head>
+
+ <body>
+<header>
+
+
+   
+
+
+
+
+<div class="m">
+    
+    <label  id="dark-change"></label>
+
+    <img class="replogohome"src="https://upload.wikimedia.org/wikipedia/commons/3/31/Reputation_Logo.svg" alt="reputationnlogohome">
+    <ul>
+      <li> Music </li>    
+       <li><a href="#reptour"> Tour </li></a>
+       <li> Merch</li>
+       <li><a href="#music-video"> Music Videos</li></a>
+    </ul>
+
+</div>
+
+
+
+<div class="grid-template">
+   <div class="buttonbuy">
+        <h2 class="text-buy" id="outnow"> reputation</h2>
+        <h4 class="text-buy"> AVAILABLE NOW</h4>
+        
+    <h2 class="stream"> STREAM / BUY</h2>
+    </div>
+    
+    <div class="banner-reputation">
+    <img id="main-banner" src="https://st1.uvnimg.com/dims4/default/094a2d7/2147483647/thumbnail/1024x576/quality/75/?url=http%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fcd%2Fb8%2F9137a09041ee80f673298a2dbf98%2Fscreen-shot-2017-11-22-at-21903-pm.png" alt="reputation-cd-buy">
+</div>
+
+</div>
+
+    </header>
+ <main>
+  <div class="section">
+    
+  </div>
+
+    <div class="container">
+
+   
+
+     <div id="music" class="mstourmerch"> 
+        <h2> Music</h2>
+        <p> All of Taylor's Music</p>
+        <a href="https://www.allaccess.com.ar/"target="_blank">
+        <img class="image-class-section-div" src="https://i.ibb.co/jvt04Xs/music.png" alt="image241"> 
+        </a>
+      </div>
+
+<div id="tour" class="mstourmerch">
+    <h2> Tour</h2>
+    <p> Current Dates and upcoming dates...</p>
+    <a href="https://open.spotify.com/" target="_blank">
+       <img class="image-class-section-div" src="https://i.ibb.co/VqPdmBJ/tour.png" alt="tour">
+    </a>  
+</div>
+      
+      <div id="merch" class="mstourmerch">
+        <h2> Merch</h2>
+        <p> Click to buy any merchandise. Ships available only to the USA and Canada</p>
+      <a href="https://open.spotify.com/" target="_blank"> 
+        <img class="image-class-section-div" src="https://i.ibb.co/bsLM2db/merch.png" alt="merch">
+      </a>
+    </div>
+
+    </div>
+    <h2 class="mvvv"> Music Videos</h2>
+<div class="music-videos" id="music-video">
+     
+
+    <a href="https://www.youtube.com/watch?v=3tmd-ClpJxA" target="_blank"> <img class="image-music-vid" id="hola"src="https://i.ytimg.com/vi/7F37r50VUTQ/maxresdefault.jpg" alt="look"> </a>
+
+   <a href="https://www.youtube.com/watch?v=7F37r50VUTQ" target="_blank"> <img class="image-music-vid" id="abcd" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_675,w_1200,x_0,y_0/dpr_1.5/c_limit,w_690/fl_lossy,q_auto/1989-Cunningham-Taylor-Swift-Bad-Blood-embed-01_rlgwym" alt="idontwanna"> </a>
+   <a href="https://www.youtube.com/watch?v=QcIy9NiNbmo" target="_blank"> <img class="image-music-vid" id="badd" src="https://images.mubicdn.net/images/film/211638/cache-357241-1532476870/image-w1280.jpg?size=800x" alt="badb"> </a>
+   
+
+    
+</div>
+
+
+
+<div id="reptour">
+<h2 class="tour-rept"> Reputation</h2>
+<h3 class="tour-rept"> Stadium Tour</h3>
+
+<div class="tourr" id="usa">USA DATES</div>
+<div class="tourr" id="international">INTERNATIONAL DATES</div>
+<div class="tourr" id="tour-netflix"> REP TOUR: THE FILM</div>
+<div class="tourr"  id="more-dates"> MORE DATES</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+   <div id="official-store">
+      <h2 id="h22" class="store-cd-magazine"> Official Store </h2> 
+
+   </div>
+<div id="store-r">
+
+  
+          
+    
+<img class="book" id="snd" src="https://hips.hearstapps.com/hmg-prod/images/target-taylor-swift-1503695429.png"alt=vinyll>
+  
+
+<img class="book" id="thrd" src="https://impactolatino.com/wp-content/uploads/2017/08/21103896_1427794063977272_1459127520_o-855x1024.png" alt="lfkdhfaf">
+    
+   
+ 
+<div class="div-buy" id="sec-image-divbuy"> BUY</div>
+<div class="div-buy" id="buycdmagaz"><a href="otra-pag.html" target="_blank"> BUY</div></a>
+
+    </div>
+
+</div>
+
+<script>
+    var content = document.querySelectorAll('main, header, .div-buy, .home-header, .tourr, .stream, .container, #music, #tour, #merch, img, .div-buy a');
+   var darkMode = document.getElementById('dark-change');
+   darkMode.addEventListener('click', function(){
+       darkMode.classList.toggle('active');
+       var i= 0
+       content.forEach(function(element) {
+            i=i+1;
+            alert(i, element);
+           element.classList.toggle('night');
+       });
+   })
+</script>
+
+
+
+
+
+</main>    
+<footer>
+
+    
+      </footer>
+      </body>
+        
+
+</html>

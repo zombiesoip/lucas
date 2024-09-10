@@ -47,9 +47,68 @@
         <div id="reel2" class="reel">?</div>
         <div id="reel3" class="reel">?</div>
       </div>
-      <button id="spin-button">Tirar!</button>
+      <button onclick="jugar()" id="spin-button">Tirar!</button>
+    </div>
+    <div
+      id="s"
+      style="
+        font-size: bold;
+        border: solid black 2px;
+        border-radius: 5px;
+        width: 20%;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+      "
+    >
+      puntaje:
     </div>
 
-    <script src="slot.js"></script>
+    <div id="dine">dinero:</div>
+
+    <button onclick="incrementar()">dinero</button>
+    <script>
+      let symbols = ["🍒", "🍋", "🍊", "🍉", "🔔", "⭐"];
+
+      let a = document.getElementById("reel1");
+      let b = document.getElementById("reel2");
+      let c = document.getElementById("reel3");
+
+      let v = 0;
+      let d = 100;
+
+      function incrementar() {
+        d = d + 100;
+        
+      }
+
+      function jugar() {
+        let rdm = Math.floor(Math.random() * symbols.length);
+        let abc = Math.floor(Math.random() * symbols.length);
+        let bcd = Math.floor(Math.random() * symbols.length);
+
+        a.innerHTML = symbols[rdm];
+        b.innerHTML = symbols[abc];
+        c.innerHTML = symbols[bcd];
+
+        if (rdm == abc && abc == bcd) {
+          v = v + 3;
+          d = d + 10;
+          alert("ganaste");
+        } else if (rdm == abc || rdm == bcd || abc == bcd) {
+          v = v + 2;
+          d = d + 5;
+        } else {
+          v = v - 3;
+          d = d - 7;
+        }
+        if (d <= -30) {
+          alert("perdiste");
+        }
+
+        document.getElementById("s").innerHTML = "puntaje: " + v;
+        document.getElementById("dine").innerHTML = "dinero: " + "$" + d;
+      }
+    </script>
   </body>
 </html>
